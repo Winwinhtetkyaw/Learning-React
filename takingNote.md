@@ -6,40 +6,40 @@ var => function scope
 let,const => block Scope
 \*\*\* const is an object, can change object properties
 
-```
+`
 const user = { name: 'bob'};
 user.name = 'Tom';
-```
+`
 
 ### Map, Filter, Reduce
 
 map() Function create a new array based on original array
 
-```let nums = [1, 2, 3, 4];
+`let nums = [1, 2, 3, 4];
 let results = nums.map((n) => n + 1);
-console.log(results);```
+console.log(results);`
 array item တစ်ခုချင်းစီမှာပေးလိုက်တဲ့ call back function အလုပ်လုပ်သွားပြီး array အသစ်တစ်ခုပြန်ရ
 
 controlling Array instead use of for,for-in
 
 ### Arrow function
 
-```let twice = n => n * 2;
-let add = (a, b) => a + b;```
+`let twice = n => n * 2;
+let add = (a, b) => a + b;`
 
 ### Default Parameter Value and Rest Parameter
 
 Default Parameter
-```function add (a, b=0){
+`function add (a, b=0){
     return a + b;
 }
-add(1);```
+add(1);`
 
 Rest Parameter
-```function add (a, b, ...c){
+`function add (a, b, ...c){
     return c;
 }
-add(1,2,3,4,5);```
+add(1,2,3,4,5);`
 
 ### Spread Operator
 
@@ -47,10 +47,10 @@ The spread (...) syntax allows an iterable, such as an array or string, to be ex
 
 Spread syntax looks exactly like rest syntax. In a way, spread syntax is the opposite of rest syntax. Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element.
 
-```let alphas = [ 'a', 'b', 'c' ];
+`let alphas = [ 'a', 'b', 'c' ];
 let nums = [1, 2, 3];
 [ alphas, nums ]; // => [ ['a', 'b', 'c'], [1, 2, 3] ] 
-[ ...alphas, ...nums ]; // => ['a', 'b', 'c', 1, 2, 3]```
+[ ...alphas, ...nums ]; // => ['a', 'b', 'c', 1, 2, 3]`
 
 ### Destructuring
 
