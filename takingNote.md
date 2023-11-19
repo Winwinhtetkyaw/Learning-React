@@ -45,31 +45,33 @@ The spread (...) syntax allows an iterable, such as an array or string, to be ex
 
 Spread syntax looks exactly like rest syntax. In a way, spread syntax is the opposite of rest syntax. Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element.
 
-`let alphas = [ 'a', 'b', 'c' ];
+```
+let alphas = [ 'a', 'b', 'c' ];
 let nums = [1, 2, 3];
 [ alphas, nums ]; // => [ ['a', 'b', 'c'], [1, 2, 3] ] 
-[ ...alphas, ...nums ]; // => ['a', 'b', 'c', 1, 2, 3]`
+[ ...alphas, ...nums ]; // => ['a', 'b', 'c', 1, 2, 3]
+```
 
 ### Destructuring
 
 Array တွေ Object တွေကိုဖြည်ချလို့ရတဲ့လုပ်ဆောင်ချက်ပါ။
 
 Array Destructure
-`
+```
 let fruits = ['Apple', 'Orange'];
 let [apple , orange] = fruits;
 
 console.log(apple);
-`
+```
 
 Object Destructuring
-`
+```
 let user = { name: "Alice", age: 25 };
 let { name, age } = user;
 
 function show(user) {
-return `${user.name} is ${user.age} years old.`;
+    return `${user.name} is ${user.age} years old.`;
 }
 
 console.log(show(user));
-`
+```
