@@ -55,15 +55,15 @@ let nums = [1, 2, 3];
 Array တွေ Object တွေကိုဖြည်ချလို့ရတဲ့လုပ်ဆောင်ချက်ပါ။
 
 Array Destructure
-`
+```
 let fruits = ['Apple', 'Orange'];
 let [apple , orange] = fruits;
 
 console.log(apple);
-`
+```
 
 Object Destructuring
-`
+```
 let user = { name: "Alice", age: 25 };
 let { name, age } = user;
 
@@ -72,4 +72,4 @@ return `${user.name} is ${user.age} years old.`;
 }
 
 console.log(show(user));
-`
+```
