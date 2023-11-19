@@ -75,3 +75,14 @@ function show(user) {
 
 console.log(show(user));
 ```
+
+String Interpolation
+```
+function show({ name, age }) {
+return `${name} is ${age} years old.`; }
+```
+
+Class
+javascript ဟာမူလဒီဇိုင်းအရ classical OOPမဟုတ်ပါ။
+Object တွေတည်ဆောက်ဖို့အတွက် class တွေကိုမသုံးပဲ
+object constructor and json တို့ကိုသုံးတယ်။
