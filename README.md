@@ -1,2 +1,2 @@
 # Learning-React
-## Reading learningnote.md ===>
+## Reading takingNote.md ===>
