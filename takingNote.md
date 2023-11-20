@@ -91,6 +91,7 @@ Object တွေတည်ဆောက်ဖို့အတွက် class တွ
 object constructor and json တို့ကိုသုံးတယ်။
 
 this keyword in javascript
+
 1. The global object
 2. As a method within an object
 3. As a constructor on a function or class
@@ -100,7 +101,9 @@ Constructor
 A special function that creates and initializes an object instance of a class.
 a constructor gets called when an object is created using the new keyword. The purpose of a constructor is to create a new object and set values for any existing object properties.
 Two types of constructor:
+
 1. object constructor function
+
 ```
 function Car(make, model, year) {
   this.make = make;
@@ -117,7 +120,9 @@ console.log('Car 1 is a ' + car1.year + ' ' + car1.make + ' ' + car1.model);
 console.log('Car 2 is a ' + car2.year + ' ' + car2.make + ' ' + car2.model);
 // Output: Car 2 is a 2018 Ford Taurus
 ```
+
 2. class constructor method
+
 ```
 class Car {
   constructor(make, model, year) {
