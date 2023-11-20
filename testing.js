@@ -8,16 +8,16 @@
 // }
 // add(1,2,3,4,5);
 
-let fruits = ['Apple', 'Orange'];
-let [apple , orange] = fruits;
+// let fruits = ['Apple', 'Orange'];
+// let [apple , orange] = fruits;
 
-console.log(apple);
+// console.log(apple);
 
-let user = { name: "Alice", age: 25 };
-let { name, age } = user;
+// let user = { name: "Alice", age: 25 };
+// let { name, age } = user;
 
-function show(user) {
-  return `${user.name} is ${user.age} years old.`;
-}
+// function show(user) {
+//   return `${user.name} is ${user.age} years old.`;
+// }
 
-console.log(show(user));
+// console.log(show(user));

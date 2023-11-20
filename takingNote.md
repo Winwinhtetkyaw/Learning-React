@@ -48,7 +48,7 @@ Spread syntax looks exactly like rest syntax. In a way, spread syntax is the opp
 ```
 let alphas = [ 'a', 'b', 'c' ];
 let nums = [1, 2, 3];
-[ alphas, nums ]; // => [ ['a', 'b', 'c'], [1, 2, 3] ] 
+[ alphas, nums ]; // => [ ['a', 'b', 'c'], [1, 2, 3] ]
 [ ...alphas, ...nums ]; // => ['a', 'b', 'c', 1, 2, 3]
 ```
 
@@ -57,6 +57,7 @@ let nums = [1, 2, 3];
 Array တွေ Object တွေကိုဖြည်ချလို့ရတဲ့လုပ်ဆောင်ချက်ပါ။
 
 Array Destructure
+
 ```
 let fruits = ['Apple', 'Orange'];
 let [apple , orange] = fruits;
@@ -65,6 +66,7 @@ console.log(apple);
 ```
 
 Object Destructuring
+
 ```
 let user = { name: "Alice", age: 25 };
 let { name, age } = user;
@@ -77,6 +79,7 @@ console.log(show(user));
 ```
 
 String Interpolation
+
 ```
 function show({ name, age }) {
 return `${name} is ${age} years old.`; }
@@ -86,3 +89,50 @@ Class
 javascript ဟာမူလဒီဇိုင်းအရ classical OOPမဟုတ်ပါ။
 Object တွေတည်ဆောက်ဖို့အတွက် class တွေကိုမသုံးပဲ
 object constructor and json တို့ကိုသုံးတယ်။
+
+this keyword in javascript
+1. The global object
+2. As a method within an object
+3. As a constructor on a function or class
+4. As a dom event handler
+
+Constructor
+A special function that creates and initializes an object instance of a class.
+a constructor gets called when an object is created using the new keyword. The purpose of a constructor is to create a new object and set values for any existing object properties.
+Two types of constructor:
+1. object constructor function
+```
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
+var car1 = new Car('Chevy', 'Blazer', 2015);
+var car2 = new Car('Ford', 'Taurus', 2018);
+
+console.log('Car 1 is a ' + car1.year + ' ' + car1.make + ' ' + car1.model);
+// Output: Car 1 is a 2015 Chevy Blazer
+
+console.log('Car 2 is a ' + car2.year + ' ' + car2.make + ' ' + car2.model);
+// Output: Car 2 is a 2018 Ford Taurus
+```
+2. class constructor method
+```
+class Car {
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+}
+
+var car1 = new Car('Chevy', 'Blazer', 2015);
+var car2 = new Car('Ford', 'Taurus', 2018);
+
+console.log('Car 1 is a ' + car1.year + ' ' + car1.make + ' ' + car1.model);
+// Output: Car 1 is a 2015 Chevy Blazer
+
+console.log('Car 2 is a ' + car2.year + ' ' + car2.make + ' ' + car2.model);
+// Output: Car 2 is a 2018 Ford Taurus
+```
